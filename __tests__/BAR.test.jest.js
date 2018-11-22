@@ -1,7 +1,7 @@
-const BAR = require('./BAR');
+const BAR = require('../src/BAR');
 // Even the mock statement lexicically comes after the BAR import statement as above,
 // jest will hoist FOO first so it will avoid loading FOO when importing BAR
-jest.mock('./FOO', () => { return () => { return 'FOO mock'};});
+jest.mock('../src/FOO', () => { return () => { return 'FOO mock'};});
 
 // You can expect clean pass for the following test.
 describe('BAR', () => {

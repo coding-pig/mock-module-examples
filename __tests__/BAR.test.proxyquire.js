@@ -4,7 +4,7 @@ const FOO_mock = () => { return 'FOO mock';};
 
 // proxyquire loads BAR while bypassing requiring FOO.
 // Instead it uses FOO_mock to act as FOO
-const BAR = proxyquire('./BAR', {
+const BAR = proxyquire('../src/BAR', {
     './FOO': FOO_mock 
 });
 

@@ -5,8 +5,8 @@
   "main": "BAR.js",
   "scripts": {
       "jest-test": "jest",
-      "proxyquire-test": "mocha FOO.test.proxyquire.js",
-      "raw-failing-test": "mocha FOO.test.raw.failing.js"
+      "proxyquire-test": "mocha __tests__/BAR.test.proxyquire.js",
+      "raw-failing-test": "mocha __tests__/BAR.test.raw.failing.js"
   },
   "repository": {
     "type": "git",

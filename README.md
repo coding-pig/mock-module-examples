@@ -7,9 +7,9 @@ Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
 
 ## Scenario
 
-* You are writing your Node JS module [`BAR.js`](./BAR.js) and its unit test file `BAR.test.js`
-* [`BAR.js`](./BAR.js) depends on [`FOO.js`](./FOO.js)
-* Loading [`BAR.js`](./BAR.js) from within `BAR.test.js` has side effect you want to avoid inside [`FOO.js`](./FOO.js)
+* You are writing your Node JS module [`BAR.js`](./src/BAR.js) and its unit test file `BAR.test.js`
+* [`BAR.js`](./BAR.js) depends on [`FOO.js`](./src/FOO.js)
+* Loading [`BAR.js`](./src/BAR.js) from within `BAR.test.js` has side effect you want to avoid inside [`FOO.js`](./src/FOO.js)
 
 ```
 FOO <---------------- BAR <-------------------- BAR.test
@@ -17,7 +17,7 @@ FOO <---------------- BAR <-------------------- BAR.test
 
 ## First attempt
 
-See [BAR.test.raw.failing.js](./BAR.test.raw.failing.js).
+See [BAR.test.raw.failing.js](./__tests__/BAR.test.raw.failing.js).
 
 To run the example, you clone this repo to your local computer, perform `npm i`, and run `npm run raw-failing-test`. You will see the error message from console as below:
 
@@ -25,7 +25,7 @@ To run the example, you clone this repo to your local computer, perform `npm i`,
 
 ## Second attempt
 
-See [BAR.test.proxyquire.js](./BAR.test.proxyquire.js).
+See [BAR.test.proxyquire.js](./__tests__/BAR.test.proxyquire.js).
 
 To run the example, supposing you have cloned the repo and installed dependencies, just execute `npm run proxyquire-test`. You will see the success message from console as below:
 
@@ -33,7 +33,7 @@ To run the example, supposing you have cloned the repo and installed dependencie
 
 
 ## Third attempt
-See [BAR.test.jest.js](./BAR.test.jest.js).
+See [BAR.test.jest.js](./__tests__/BAR.test.jest.js).
 
 To run the example, supposing you have cloned the repo and installed dependencies, just execute `npm run jest-test`. You will see the success message from console as below:
 
