@@ -3,18 +3,17 @@ Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
 
 ## Scenario
 
-* You are writing your Node JS module `FOO.js` and its unit test file `FOO.test.js`
-* `FOO.test` depends on `FOO.js`
-* `FOO.js` depends on module `BAR.js`.
-* Loading `BAR.js` has side effect you want to avoid inside `FOO.test.js`
+* You are writing your Node JS module [`BAR.js`](./BAR.js) and its unit test file `BAR.test.js`
+* `BAR.js` depends on [`FOO.js`](./FOO.js)
+* Loading [`BAR.js`](./BAR.js) from within `BAR.test.js` has side effect you want to avoid inside [`FOO.js`](./FOO.js)
 
 ```
-BAR <---------------- FOO <-------------------- FOO.test
+FOO <---------------- BAR <-------------------- BAR.test
 ```
 
 ## First attempt
 
-See [Foo.test.raw.failing.js](./FOO.test.raw.failing.js).
+See [BAR.test.raw.failing.js](./BAR.test.raw.failing.js).
 
 To run the example, you clone this repo to your local computer, perform `npm i`, and run `npm run raw-failing-test`. You will see the error message from console as below:
 
@@ -22,7 +21,7 @@ To run the example, you clone this repo to your local computer, perform `npm i`,
 
 ## Second attempt
 
-See [Foo.test.proxyquire.js](./FOO.test.proxyquire.js).
+See [BAR.test.proxyquire.js](./BAR.test.proxyquire.js).
 
 To run the example, supposing you have cloned the repo and installed dependencies, just execute `npm run proxyquire-test`. You will see the success message from console as below:
 
@@ -30,7 +29,7 @@ To run the example, supposing you have cloned the repo and installed dependencie
 
 
 ## Third attempt
-See [Foo.test.jest.js](./FOO.test.jest.js).
+See [BAR.test.jest.js](./BAR.test.jest.js).
 
 To run the example, supposing you have cloned the repo and installed dependencies, just execute `npm run jest-test`. You will see the success message from console as below:
 
