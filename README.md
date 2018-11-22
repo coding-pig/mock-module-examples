@@ -4,7 +4,7 @@ Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
 ## Scenario
 
 * You are writing your Node JS module [`BAR.js`](./BAR.js) and its unit test file `BAR.test.js`
-* `BAR.js` depends on [`FOO.js`](./FOO.js)
+* [`BAR.js`](./BAR.js) depends on [`FOO.js`](./FOO.js)
 * Loading [`BAR.js`](./BAR.js) from within `BAR.test.js` has side effect you want to avoid inside [`FOO.js`](./FOO.js)
 
 ```
