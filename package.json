@@ -1,0 +1,29 @@
+{
+  "name": "mock-module",
+  "version": "1.0.0",
+  "description": "Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.",
+  "main": "BAR.js",
+  "scripts": {
+      "jest-test": "jest",
+      "proxyquire-test": "mocha FOO.test.proxyquire.js",
+      "raw-failing-test": "mocha FOO.test.raw.failing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.move.com:zqiu/mock-module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+      "testMatch": [
+          "<rootDir>/**/*.test.jest.js"
+      ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "proxyquire": "*",
+    "jest": "*"
+  }
+}
