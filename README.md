@@ -1,4 +1,5 @@
-# mock-module
+# Mock Module Examples
+
 Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
 
 ## Scenario
@@ -38,3 +39,5 @@ To run the example, supposing you have cloned the repo and installed dependencie
 ## Conclusion
 
 Both `proxyquire` and `jest` offer the capability to mock a while module cleanly. However `jest`'s capability is built-in and thus the preferred approach.
+
+`jest` however imposes an inconvenience as it does not allow referencing external veriables when stuffing the mock. Hence the mock has to be in-place defined in the call of `jest.mock`.
