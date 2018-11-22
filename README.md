@@ -1,4 +1,4 @@
-# Mock Module Examples
+# Yet Another Demo of Module Mocking in Node JS
 
 Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
 
