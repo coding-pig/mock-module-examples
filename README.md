@@ -1,6 +1,8 @@
 # Yet Another Demo of Module Mocking in Node JS
 
 ![node version](https://img.shields.io/badge/node-%3E%3D8.11.0-brightgreen.svg)
+[![HitCount](http://hits.dwyl.io/{qdxlqy2001}/mock-module-examples.svg)](http://hits.dwyl.io/qdxlqy2001/mock-module-examples)
+
 
 
 Demonstrate how to mock Node module in unit tests via `jest` or `proxyquire`.
